@@ -1,0 +1,16 @@
+services:
+  nobet:
+    build: .
+    restart: unless-stopped
+    environment:
+      PORT: "3001"
+      DATA_DIR: /data
+      PUBLIC_URL: ${PUBLIC_URL:?HTTPS oyun adresini belirleyin}
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD:?Guclu egitmen kodunu belirleyin}
+    ports:
+      - "3001:3001"
+    volumes:
+      - nobet_data:/data
+
+volumes:
+  nobet_data:

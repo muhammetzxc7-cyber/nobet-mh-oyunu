@@ -1,0 +1,36 @@
+{
+  "name": "nurse-sim-demo",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -k -n API,WEB \"node --watch server/index.mjs\" \"vite --host 0.0.0.0\"",
+    "start": "node --env-file-if-exists=.env server/index.mjs",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "test": "node --test tests/scenario.test.mjs tests/course.test.mjs",
+    "test:browser": "node tests/learning-browser.mjs",
+    "test:dev": "node tests/dev-login.mjs"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "express": "^5.2.1",
+    "lucide-react": "latest",
+    "qrcode": "^1.5.4",
+    "react": "latest",
+    "react-dom": "latest",
+    "three": "latest",
+    "typescript": "latest",
+    "vite": "latest"
+  },
+  "devDependencies": {
+    "@playwright/test": "latest",
+    "@types/qrcode": "^1.5.6",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "@types/three": "latest",
+    "concurrently": "^10.0.5",
+    "jsqr": "^1.4.0",
+    "pngjs": "^7.0.0"
+  }
+}

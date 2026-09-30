@@ -1,0 +1,12 @@
+.maze-character-layer { position: absolute; top: 54px; left: 0; width: 100%; height: calc(100% - 96px); overflow: visible; z-index: 3; pointer-events: none; }
+.maze-nurse { filter: drop-shadow(0 2px 2px #345d4c66); }
+.maze-nurse .nurse-figure { transform-box: fill-box; transform-origin: center bottom; animation: nurse-idle 1.8s ease-in-out infinite; }
+.maze-nurse.walking .nurse-figure { animation: nurse-stride .36s ease-in-out infinite alternate; }
+.maze-nurse.walking .nurse-leg.left { transform-origin: -5px 7px; animation: nurse-left-leg .36s ease-in-out infinite alternate; }
+.maze-nurse.walking .nurse-leg.right { transform-origin: 5px 7px; animation: nurse-right-leg .36s ease-in-out infinite alternate; }
+.maze-nurse.walking .nurse-arm.left { transform-origin: -8px -4px; animation: nurse-right-leg .36s ease-in-out infinite alternate; }
+.maze-nurse.walking .nurse-arm.right { transform-origin: 8px -4px; animation: nurse-left-leg .36s ease-in-out infinite alternate; }
+@keyframes nurse-idle { 50% { transform: translateY(-2px); } }
+@keyframes nurse-stride { to { transform: translateY(-3px); } }
+@keyframes nurse-left-leg { to { transform: rotate(25deg); } }
+@keyframes nurse-right-leg { to { transform: rotate(-25deg); } }
