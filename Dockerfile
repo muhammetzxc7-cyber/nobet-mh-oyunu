@@ -13,6 +13,7 @@ ENV NODE_ENV=production PORT=3001 DATA_DIR=/data
 COPY package.json package-lock.json ./
 RUN npm ci --omit=dev && mkdir -p /data && chown node:node /data
 COPY --from=build /app/dist ./dist
+COPY --from=build /app/src ./src
 COPY server ./server
 USER node
 EXPOSE 3001
