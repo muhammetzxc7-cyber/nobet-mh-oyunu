@@ -8,11 +8,12 @@
     "start": "node --env-file-if-exists=.env server/index.mjs",
     "build": "tsc -b && vite build",
     "preview": "vite preview --host 0.0.0.0",
-    "test": "node --test tests/scenario.test.mjs tests/course.test.mjs",
+    "test": "node --test tests/scenario.test.mjs tests/course.test.mjs tests/cloud-storage.test.mjs",
     "test:browser": "node tests/learning-browser.mjs",
     "test:dev": "node tests/dev-login.mjs"
   },
   "dependencies": {
+    "@libsql/client": "^0.18.0",
     "@vitejs/plugin-react": "latest",
     "express": "^5.2.1",
     "lucide-react": "latest",
