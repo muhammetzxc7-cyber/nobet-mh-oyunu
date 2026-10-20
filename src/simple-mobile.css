@@ -1,0 +1,62 @@
+/* Desktop composition is retained; mobile puts the current task first. */
+.layout-control{display:flex;align-items:center;gap:8px;font-size:12px;color:#405d39;white-space:nowrap}
+.layout-control select{font:inherit;min-height:44px;padding:8px 10px;border:1px solid #b9cbb1;border-radius:8px;background:#fffefb;color:#334f2d}
+.compact-details>summary{display:none}.compact-details-body{display:contents}.landing-map>.compact-details-body{display:block}
+.clinical-visual>.compact-details{display:contents}
+button:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid #477a35;outline-offset:3px}
+html[data-layout=mobile] .course-header{height:auto;min-height:76px;padding:14px 18px;flex-wrap:wrap;gap:12px}
+html[data-layout=mobile] .course-header nav{flex:1;justify-content:flex-end;flex-wrap:wrap;gap:10px}
+html[data-layout=mobile] .layout-control{font-size:12px}
+html[data-layout=mobile] .course-header nav .text-button{font-size:12px;min-height:44px}
+html[data-layout=mobile] .header-help,html[data-layout=mobile] .header-divider,html[data-layout=mobile] .course-brand>small,html[data-layout=mobile] .course-brand>i{display:none}
+html[data-layout=mobile] .course-main{max-width:600px;margin:0 auto;padding:24px 16px}
+html[data-layout=mobile] .course-footer{max-width:600px;margin:8px auto;padding:20px 16px;flex-wrap:wrap}
+html[data-layout=mobile] .landing-layout,html[data-layout=mobile] .journey-layout,html[data-layout=mobile] .case-layout,html[data-layout=mobile] .learning-layout{display:flex;flex-direction:column;gap:24px}
+html[data-layout=mobile] .landing-copy{width:100%}
+html[data-layout=mobile] .landing-copy h1{font-size:34px;line-height:1.18}
+html[data-layout=mobile] .hero-description{font-size:15px;line-height:1.7}
+html[data-layout=mobile] .hero-facts{font-size:12px;flex-wrap:wrap}
+html[data-layout=mobile] .landing-map{order:1;width:100%}
+html[data-layout=mobile] .principles{display:none}
+html[data-layout=mobile] .enroll-card{max-width:none;padding:20px}
+html[data-layout=mobile] .enroll-input input{font-size:16px;height:50px}
+html[data-layout=mobile] .enroll-heading h2{font-size:17px}
+html[data-layout=mobile] .enroll-heading p,html[data-layout=mobile] .privacy-caption{font-size:12px;line-height:1.65}
+html[data-layout=mobile] .compact-details{display:block;min-width:0;width:100%}
+html[data-layout=mobile] .compact-details>summary{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:48px;padding:13px 16px;border:1px solid #bed0b5;border-radius:9px;background:#f3f7ef;color:#3d5d38;font-size:14px;font-weight:600;cursor:pointer;list-style:none}
+html[data-layout=mobile] .compact-details>summary::-webkit-details-marker{display:none}
+html[data-layout=mobile] .compact-details>summary span{font-size:20px}
+html[data-layout=mobile] .compact-details[open]>.compact-details-body{display:block;padding-top:12px}
+html[data-layout=mobile] .compact-details:not([open])>.compact-details-body{display:none}
+html[data-layout=mobile] .clinical-screen .clinical-grid{display:flex;flex-direction:column;gap:18px}
+html[data-layout=mobile] .clinical-screen .clinical-visual{display:contents}
+html[data-layout=mobile] .clinical-screen .clinical-monitor{order:0;display:block!important;width:100%}
+html[data-layout=mobile] .clinical-screen .clinical-decision{order:1;width:100%}
+html[data-layout=mobile] .clinical-screen .clinical-visual>.compact-details{order:2}
+html[data-layout=mobile] .clinical-footer{order:3}
+html[data-layout=mobile] .clinical-heading{flex-direction:column;align-items:stretch;gap:16px}
+html[data-layout=mobile] .clinical-toolbar{display:flex;width:100%}
+html[data-layout=mobile] .clinical-toolbar .button{font-size:13px;gap:6px;margin-right:auto}
+html[data-layout=mobile] .compact-values{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;padding:16px}
+html[data-layout=mobile] .compact-values>div{padding:0 8px;border:0}
+html[data-layout=mobile] .compact-values strong{font-size:28px}
+html[data-layout=mobile] .compact-values small{font-size:11px}
+html[data-layout=mobile] .compact-values em,html[data-layout=mobile] .compact-values strong>span{font-size:10px;line-height:1.5}
+html[data-layout=mobile] .compact-values .wave-canvas{display:none}
+html[data-layout=mobile] .clinical-options{display:grid;grid-template-columns:1fr}
+html[data-layout=mobile] .answer-button,html[data-layout=mobile] .mobile-choices button{font-size:16px;line-height:1.6;min-height:60px;padding:16px 12px;transform:none}
+html[data-layout=mobile] .question-card,html[data-layout=mobile] .observation-card,html[data-layout=mobile] .mobile-question,html[data-layout=mobile] .mobile-learning{padding:22px 16px}
+html[data-layout=mobile] .observation-steps{display:flex;flex-direction:column;gap:18px}
+html[data-layout=mobile] .observation-actions{display:flex;flex-direction:column;align-items:stretch}
+html[data-layout=mobile] .button{font-size:14px;min-height:48px}
+html[data-layout=mobile] .mobile-flow-grid{display:flex;flex-direction:column;gap:18px}
+html[data-layout=mobile] .mobile-question-column{order:0;width:100%}
+html[data-layout=mobile] .mobile-scene-column{order:1;width:100%}
+html[data-layout=mobile] .mobile-flow-head>p{font-size:15px;line-height:1.7}
+html[data-layout=mobile] .mobile-maze-strip{display:block;padding:0;border:0;background:none}
+html[data-layout=mobile] .dead-end-preview{display:none}
+html[data-layout=mobile] .user-pill{font-size:12px;max-width:190px;overflow-wrap:anywhere}
+html[data-layout=mobile] .course-brand{flex-shrink:0}
+html[data-layout-preference=desktop] .course-header{min-width:1000px}
+html[data-layout-preference=desktop] .course-main{min-width:950px}
+@media(prefers-reduced-motion:reduce){html[data-layout=mobile] *{animation:none!important;scroll-behavior:auto!important}}
