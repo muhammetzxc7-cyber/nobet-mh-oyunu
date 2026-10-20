@@ -1,3 +1,20 @@
+# Güncel yayın: ücretsiz Render + Turso
+
+Oyun: https://nobet-mh-oyunu.onrender.com/?view=auto
+Eğitmen: https://nobet-mh-oyunu.onrender.com/#egitmen
+
+Telefonlarda mobil, bilgisayarlarda bilgisayar görünümü otomatik açılır. Görünüm menüsü elle seçim ve otomatiğe dönüş sağlar. QR bağlantısı her katılımcıda cihaz seçimini otomatik başlatır.
+
+Render servisi Free planındadır; ücretli disk kullanılmaz. Katılımcı ilerlemesi, puanlar ve olaylar TURSO_DATABASE_URL / TURSO_AUTH_TOKEN ile ayrı Turso veritabanında saklanır. ADMIN_PASSWORD sunucu ortamında sabit tutulur. Anahtarları kaynak koduna veya katılımcılara vermeyin. Render üzerinde Turso ayarı yoksa uygulama veri kaybını önlemek için başlatılmaz.
+
+Ücretsiz Render kullanılmayınca uyur; sonraki ilk açılış bekletebilir. Ücretsiz kota ve sağlayıcı koşulları geçerlidir. Sabit adres bilgisayardan bağımsızdır; hizmet hesabı ve ücretsiz servisler korunmalıdır. Ücretli özellik açılmamıştır.
+
+Kontroller: npm run build, npm test. tests/cloud-storage.test.mjs hem yerel SQLite hem libSQL adaptöründe on durağı, eşzamanlı cevap korumasını, yeniden başlatmada kayıtları, eğitmen erişimini ve CSV çıktısını doğrular. LibSQL adaptör testi yerel libSQL dosyasıyla çalışır; gerçek Turso bağlantısı yayın doğrulamasında ayrıca sınanır.
+
+Aşağıdaki eski teslim notları önceki sürümün tarihsel açıklamasıdır. Yayın, kalıcı disk ve geçici bağlantı bilgileri için yukarıdaki güncel kurulum geçerlidir.
+
+---
+
 # Nöbet — Klinik Labirent
 
 Hemşireler için malign hipertermi eğitimi oyunu. Derya K. vakası başlangıçtan 10. durağın sonuna kadar oynanır; labirent kapıları klinik görevlerle açılır. İlaç sulandırma sayıları kullanılacak gerçek preparat kesinleşince ürün bilgisine göre eklenmelidir.
